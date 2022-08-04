@@ -1,0 +1,159 @@
+body {
+  font-family: "Patua One", cursive;
+  background-color: #7a86b6;
+}
+
+.container {
+  max-width: 500px;
+  margin: 10px auto;
+  border-radius: 10px;
+  border: 1px solid #495c83;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+}
+.fa-plus {
+  color: #eeede7;
+}
+
+.input-task,
+.btn-task,
+.task-content,
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+h1 {
+  color: #eeede7;
+  text-align: center;
+}
+h3 {
+  color: #eeede7;
+}
+
+.btn-task:hover,
+.btn-addTodo:hover {
+  background-color: #607eaa;
+}
+.fa-plus:hover {
+  color: #b9b7bd;
+}
+.task-list {
+  margin-bottom: 20px;
+}
+.task {
+  display: flex;
+  justify-content: space-between;
+  background-color: #495c83;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+.content {
+  flex: 1 1 0%;
+}
+
+.task .content .task-content {
+  font-family: "Patua One", cursive;
+  color: #eeede7;
+  width: 100%;
+  display: block;
+  transition: 0.4s;
+}
+.task .content .task-content:not(:read-only) {
+  color: pink;
+}
+.task .action {
+  display: flex;
+  margin: 0, -0.5rem;
+}
+
+.task .action button {
+  font-family: "Patua One", cursive;
+  cursor: pointer;
+  margin: 0, 0.5rem;
+  color: #b9b7bd;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+
+.task .action .edit:hover {
+  color: #eeede7;
+}
+.task .action .delete:hover {
+  color: #ff0063;
+}
+.task .action .delete {
+  color: #d61c4e;
+}
+.todolist {
+  padding: 1rem;
+}
+.button-add {
+  margin-top: 50%;
+  margin-left: 85%;
+}
+.btn-addTodo {
+  background-color: #495c83;
+  padding: 15px 20px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+.container-input {
+}
+.form {
+  border-radius: 10px;
+  margin-top: -70px;
+  padding: 5rem 2rem;
+  background-color: #dbdad8;
+  transform: translateY(200%);
+}
+.form.slide {
+  transform: translateY(0);
+}
+.form-todo {
+  display: flex;
+}
+.input-task {
+  flex: 1 1 0%;
+  background-color: #495c83;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  color: #eeede7;
+  font-family: "Patua One", cursive;
+}
+.input-task::placeholder {
+  color: #b9b7bd;
+}
+.btn-task {
+  background-color: #495c83;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.footer {
+  color: #eeede7;
+  padding: 10px;
+  text-align: center;
+}
+.fa-github,
+.fa-linkedin,
+.fa-instagram {
+  color: #eeede7;
+  font-size: 1.5rem;
+}
+.fa-github:hover,
+.fa-linkedin:hover,
+.fa-instagram:hover {
+  color: #495c83;
+}
+a {
+  padding-right: 10px;
+}
+.row-icons {
+  padding: 5px;
+}
